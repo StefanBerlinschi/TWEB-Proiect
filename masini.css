@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+    border: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(210, 210, 210);
+}
+
+header {
+    display: flex;
+    background-color: #53545a;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/*  BARA DE NAVIGATIE  */
+.nav_lst {
+    list-style: none;
+    padding: 14px 16px;
+}
+
+.nav_btn {
+    display: inline-block;
+}
+
+.nav_btn a {
+    transition: all 0.3s ease 0s;
+    color:white;
+    text-align: center;
+    font-size: large;
+    padding: 35px 16px;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgb(231, 130, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_btn a:hover {
+    background-color: rgb(231, 130, 0);
+} 
+
+
+/*  CONTINUT  */
+#content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.butoane_portocalii {
+    transition: all 0.3s ease 0s;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgb(231, 130, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.butoane_portocalii:hover {
+    transition: all 0.3s ease 0s;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgb(148, 98, 34);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.lista_vanzari {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*  VANZARI  */
+.vanzare {
+    transition: all 0.3s ease 0s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 14px 16px;
+    margin: 10px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 20px;
+    width: 750px;
+    height: 370px;
+    box-shadow: 5px 5px 5px rgb(83, 83, 83);
+}
+
+.imagine_masina {
+    width: 100%;
+    height: 100%; 
+    border-radius: 20px;
+}
+/* .margine_neagra {
+    border-color: black;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+} */
+
+.vanzare:hover {
+    transition: all 0.3s ease 0s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 14px 16px;
+    margin: 10px;
+    background-color: rgb(231, 130, 0);
+    border-radius: 20px;
+    width: 750px;
+    height: 370px;
+    box-shadow: 5px 5px 5px rgb(83, 83, 83);
+}
+
+.badge {
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    background-color: rgb(104, 104, 104);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#submit_form {
+    /* margin: 20px; */
+    background-color: rgb(248, 188, 110);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+/*  DESPRE */
+.despre {
+    background-color: rgb(150, 150, 150);
+    height: 300px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONTACT  */
+.contact {
+    background-color: rgb(50, 50, 50);
+    height: 300px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact a {
+    color: rgb(231, 130, 0);
+    font-size: 20px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.contact_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+@media (max-width: 1280px) {
+    .vanzare {
+        transition: all 0.3s ease 0s;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding: 14px 16px;
+        margin: 10px;
+        background-color: rgb(199, 199, 199);
+        border-radius: 20px;
+        width:500px;
+        height: 240px;
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+        font-size: x-small;
+    }
+
+    .vanzare.h2 {
+        font-size: 3px;
+    }
+
+    .vanzare:hover {
+        transition: all 0.3s ease 0s;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding: 14px 16px;
+        margin: 10px;
+        background-color: rgb(231, 130, 0);
+        border-radius: 20px;
+        width: 500px;
+        height: 240px;
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+
+    .imagine_masina {
+        width: 100%;
+        height: 100%; 
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        background-color: #53545a;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #content {
+        margin-top: 150px;
+    }
+
+    .nav_btn a {
+        transition: all 0.3s ease 0s;
+        color:white;
+        text-align: center;
+        font-size: large;
+        padding: 15px 16px;
+        text-decoration: none;
+    }
+
+    .vanzare {
+        transition: all 0.3s ease 0s;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding: 14px 16px;
+        margin: 10px;
+        background-color: rgb(199, 199, 199);
+        border-radius: 20px;
+        width: 390px;
+        height: 200px;
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+        font-size: x-small;
+    }
+
+    .vanzare.h2 {
+        font-size: 1px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .vanzare:hover {
+        transition: all 0.3s ease 0s;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding: 14px 16px;
+        margin: 10px;
+        background-color: rgb(231, 130, 0);
+        border-radius: 20px;
+        width: 390px;
+        height: 200px;
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+
+    .imagine_masina {
+        width: 100%;
+        height: 100%; 
+        border-radius: 20px;
+    }
+
+    .despre {
+        font-size: small;
+        height: 400PX;
+        padding: 30px;
+    }
+}
